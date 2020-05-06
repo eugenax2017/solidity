@@ -1,0 +1,183 @@
+{
+  "contractName": "GpcTokenSale",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/2020/Laboral/Bitcoins/token_sale/contracts/GpcTokenSale.sol\":\"GpcTokenSale\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/2020/Laboral/Bitcoins/token_sale/contracts/GpcTokenSale.sol\":{\"keccak256\":\"0x046d695d01f33b73ca85be3db2508cef772de794efe32fe7dc65fae97c8bb335\",\"urls\":[\"bzz-raw://1c6509e327658756929422ab1cf57cbb2cd37bd764b7df076f08665c3d06569e\",\"dweb:/ipfs/QmXqpDFNQ4U4uiwkpKoK1ekwm3LabgTjv7cwKfqQWmrBuv\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a723158209978d770747f0f3e3463c91da7c31ccd6a9a6b655790ac71a66223d2316977a064736f6c63430005100032",
+  "deployedBytecode": "0x6080604052600080fdfea265627a7a723158209978d770747f0f3e3463c91da7c31ccd6a9a6b655790ac71a66223d2316977a064736f6c63430005100032",
+  "sourceMap": "36:73:1:-;;;67:39;8:9:-1;5:2;;;30:1;27;20:12;5:2;67:39:1;36:73;;;;;;",
+  "deployedSourceMap": "36:73:1:-;;;;;",
+  "source": "pragma solidity >=0.4.21 <0.7.0;\r\n\r\ncontract GpcTokenSale {\r\n\r\n    constructor() public {\r\n        \r\n    }\r\n}",
+  "sourcePath": "C:\\2020\\Laboral\\Bitcoins\\token_sale\\contracts\\GpcTokenSale.sol",
+  "ast": {
+    "absolutePath": "/C/2020/Laboral/Bitcoins/token_sale/contracts/GpcTokenSale.sol",
+    "exportedSymbols": {
+      "GpcTokenSale": [
+        192
+      ]
+    },
+    "id": 193,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 187,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 192,
+        "linearizedBaseContracts": [
+          192
+        ],
+        "name": "GpcTokenSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 190,
+              "nodeType": "Block",
+              "src": "88:18:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 191,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 188,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "78:2:1"
+            },
+            "returnParameters": {
+              "id": 189,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "88:0:1"
+            },
+            "scope": 192,
+            "src": "67:39:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 193,
+        "src": "36:73:1"
+      }
+    ],
+    "src": "0:109:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/2020/Laboral/Bitcoins/token_sale/contracts/GpcTokenSale.sol",
+    "exportedSymbols": {
+      "GpcTokenSale": [
+        192
+      ]
+    },
+    "id": 193,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 187,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 192,
+        "linearizedBaseContracts": [
+          192
+        ],
+        "name": "GpcTokenSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 190,
+              "nodeType": "Block",
+              "src": "88:18:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 191,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 188,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "78:2:1"
+            },
+            "returnParameters": {
+              "id": 189,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "88:0:1"
+            },
+            "scope": 192,
+            "src": "67:39:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 193,
+        "src": "36:73:1"
+      }
+    ],
+    "src": "0:109:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-06T11:20:42.994Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
