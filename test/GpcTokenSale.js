@@ -56,7 +56,7 @@ contract('GpcTokenSale', (accounts) => {
             assert(error.message.indexOf('revert') >= 0, 'msg.value must equal number of tokens in wei');
             return tokenSaleInstance.buyTokens(800000, { from: buyer, value: numberOfTokens * tokenPrice });
         }).then(assert.fail).catch(function(error) {
-            assert(error.message.indexOf('revert') >= 0, 'cannot purchase more than available');;
+            assert(error.message.indexOf('revert') >= 0, 'cannot purchase more than available');
         });    
     });
 
@@ -81,7 +81,7 @@ contract('GpcTokenSale', (accounts) => {
         }).then((price) => {
             assert.equal(price.toNumber(), 0, 'token price was reset');
         }).then(assert.fail).catch((error) => {
-
+            assert(error.message.indexOf('Gas') >= 0, 'token price was reset');
         });
     });
 

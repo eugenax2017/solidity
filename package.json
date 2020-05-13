@@ -1,0 +1,17 @@
+{
+    "name": "gpc-token-sale",
+    "version": "1.0.0",
+    "description": "Gpc Token Sale ICO",
+    "main": "truffle-config.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "dev": "lite-server"
+    },
+    "author": "Eugene",
+    "license": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.5.4"
+    }
+}
