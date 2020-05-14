@@ -37,7 +37,7 @@ App = {
             App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
             web3 = new Web3(App.web3Provider);
         }*/
-
+        
         return App.initContracts();
     },
 
@@ -55,7 +55,30 @@ App = {
                 App.contracts.GpcToken.deployed().then((gpcToken) => {
                     console.log("Gpc Token Address: ", gpcToken.address);
                 });
+                App.listenForEvents();
                 return App.render();
+            });
+        });
+    },
+
+    //Listen for events emitted from the  contract
+    listenForEvents: function() {
+        /*App.contracts.GpcTokenSale.deployed().then((instance) => {
+            instance.Sell({}, {
+                fromBlock: 0,
+                toBlock: 'latest'
+            }).then((error, event) => {
+                console.log("event triggered", event);
+                App.render();
+            });
+        });*/
+        App.contracts.GpcTokenSale.deployed().then((instance) => {            
+            instance.Sell( {
+                fromBlock: 0,
+                toBlock: 'latest'
+            }, (error, event) => {
+                console.log("event triggered", event);
+                App.render();
             });
         });
     },
@@ -113,17 +136,23 @@ App = {
     buyTokens: function() {
         $('#content').hide();
         $('#loader').show();
-        var numberOfToken = $('#numberOfTokens').val();
+        console.log(App.account);
+        var numberOfTokens = $('#numberOfTokens').val();
         App.contracts.GpcTokenSale.deployed().then((instance) => {
-            return instance.buyTokens;
-        }).then((balance) => {
-
-            $('.gpc')
-        })
-
+            return instance.buyTokens(numberOfTokens, {
+                from: App.account,
+                value: numberOfTokens * App.tokenPrice,
+                gas: 500000 //Gas limit
+            });
+        }).then((result) => {
+            console.log("Tokens bought ...");
+            $('form').trigger('reset'); //reset number of tokens in form
+            /*$('#loader').hide();
+            $('#content').show();*/
+            //Waiting for Sell event
+        });
     }
 }    
-
 
 $(function() {
     $(window).on('load', function() {
