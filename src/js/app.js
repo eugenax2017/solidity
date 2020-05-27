@@ -30,7 +30,7 @@ App = {
             web3 = new Web3(App.web3Provider);
           
         }
-        /*if (typeof web3 !== 'underfined') {
+        /*-f (typeof web3 !== 'underfined') {
             App.web3Provider = web3.currentProvider;
             web3 = new Web3(web3.currentProvider);
         } else {
@@ -131,18 +131,18 @@ App = {
                 loader.hide();
                 content.show();
             });
-        });        
+        });       
     },
+
     buyTokens: function() {
         $('#content').hide();
         $('#loader').show();
-        console.log(App.account);
         var numberOfTokens = $('#numberOfTokens').val();
         App.contracts.GpcTokenSale.deployed().then((instance) => {
             return instance.buyTokens(numberOfTokens, {
                 from: App.account,
                 value: numberOfTokens * App.tokenPrice,
-                gas: 500000 //Gas limit
+                gas: 500000 //Gas limit 
             });
         }).then((result) => {
             console.log("Tokens bought ...");
