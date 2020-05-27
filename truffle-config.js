@@ -18,7 +18,7 @@
  *
  */
 
-// const HDWalletProvider = require('@truffle/hdwallet-provider');
+const HDWalletProvider = require('@truffle/hdwallet-provider');
 // const infuraKey = "fj4jll3k.....";
 //
 // const fs = require('fs');
@@ -48,12 +48,35 @@ module.exports = {
       network_id: "*"       // Any network (default: none)
      },
 
+     goerli: {
+      host: "localhost",
+      port: 8545,
+      network_id: 5,
+      gasPrice: 25000000000
+      //gas: 470000
+     },
+
+     kovan: {
+      provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://kovan.infura.io/${process.env.INFURA_API_KEY}`),
+      gas: 5000000,
+      gasPrice: 25000000000,
+      network_id: 42
+     },
+
      rinkeby: {
       host: "localhost",
       port: 8545,
       network_id: 4,
       gas: 470000
-     }
+     },
+
+     mainnet: {
+      provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://mainnet.infura.io/${process.env.INFURA_API_KEY}`),
+      gas: 5000000,
+      gasPrice: 25000000000,
+      confirmations: 2,
+      network_id: 1
+    }
 
     // Another network with more advanced options...
     // advanced: {

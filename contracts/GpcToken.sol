@@ -2,8 +2,8 @@ pragma solidity >=0.4.21 <0.7.0;
 
 contract GpcToken {
     
-    string  public name = 'Gpc Token';    
-    string  public symbol = 'GPC';
+    string  public name = 'GPS Crypto';    
+    string  public symbol = 'GPSC';
     string  public standard = 'Gpc Token v1.0';
     uint256 public totalSupply;
 
