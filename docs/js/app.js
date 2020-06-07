@@ -135,8 +135,8 @@ App = {
     },
 
     buyTokens: function() {
-        $('#content').hide();
-        $('#loader').show();
+        //$('#content').hide();
+        //$('#loader').show();
         var numberOfTokens = $('#numberOfTokens').val();
         App.contracts.GpcTokenSale.deployed().then((instance) => {
             return instance.buyTokens(numberOfTokens, {
@@ -155,6 +155,8 @@ App = {
 }    
 
 $(function() {
+    console.log("Enter in the app ");
+    alert("ethereum: " + ethereum);
     $(window).on('load', function() {
         App.init();
     })
