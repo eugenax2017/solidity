@@ -156,7 +156,7 @@ App = {
 }    
 
 $(function() {
-    alert("ethereum: " + ethereum);
+    console.log(ethereum);
     $(window).on("load", function(e) {
         console.log("Enter in the app ");
         App.init();
