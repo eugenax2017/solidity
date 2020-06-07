@@ -157,7 +157,7 @@ App = {
 
 $(function() {
     console.log(ethereum);
-    console.log(ethereum);
+    console.log(web3);
     $(window).on("load", function(e) {
         console.log("Enter in the app ");
         App.init();
