@@ -156,8 +156,13 @@ App = {
     }
 }    
 
-$(function() {
+window.onload = function() {
+    console.log("Enter in the app 2");
+    App.init();
+}
+
+/*$(function() {
     $(window).on('load', function() {
         App.init();
-    })
-});
+    });    
+});*/
