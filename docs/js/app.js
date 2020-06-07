@@ -157,8 +157,9 @@ App = {
 
 $(function() {
     console.log(ethereum);
+    console.log(ethereum);
     $(window).on("load", function(e) {
         console.log("Enter in the app ");
         App.init();
-    })
+    });
 });
