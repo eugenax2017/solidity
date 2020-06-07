@@ -6,9 +6,10 @@
     "directories": {
         "test": "test"
     },
-    "homepage": "http://eugenax2017.github.io/Solidity",
+    "homepage": "http://eugenax2017.github.io/solidity",
     "scripts": {
         "dev": "lite-server",
+        "predeploy": "npm run build",
         "deploy": "gh-pages -d build"
     },
     "author": "Eugene",

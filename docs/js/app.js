@@ -137,6 +137,7 @@ App = {
     buyTokens: function() {
         //$('#content').hide();
         //$('#loader').show();
+        alert("Pushed the button");
         var numberOfTokens = $('#numberOfTokens').val();
         App.contracts.GpcTokenSale.deployed().then((instance) => {
             return instance.buyTokens(numberOfTokens, {
