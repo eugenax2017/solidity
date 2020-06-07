@@ -173,6 +173,6 @@ window.onload = function(e) {
     console.log(ethereum);
     console.log(web3);
 
-    console.log("Enter in the app 2");
+    console.log("Enter in the app 2!");
     App.init();
 }
