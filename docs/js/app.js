@@ -156,9 +156,9 @@ App = {
 }    
 
 $(function() {
-    console.log("Enter in the app ");
     alert("ethereum: " + ethereum);
-    $(window).on('load', function() {
+    $(window).on("load", function(e) {
+        console.log("Enter in the app ");
         App.init();
     })
 });
