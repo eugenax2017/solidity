@@ -18,17 +18,19 @@ App = {
             //getting Permission to access. This is for when the user has new MetaMask
             ethereum.enable();
             App.web3Provider = ethereum;
-            web3 = new Web3(ethereum);          
+            web3 = new Web3(ethereum); 
+            console.log("fase1");         
         } else if (typeof web3 !== 'undefined') {
             App.web3Provider = web3.currentProvider;  
             web3 = new Web3(web3.currentProvider);
+            console.log("fase2");
             // Acccounts always exposed. This is those who have old version of MetaMask
           
         } else {
             // Specify default instance if no web3 instance provided
             App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
             web3 = new Web3(App.web3Provider);
-          
+            console.log("fase3");          
         }
         /*-f (typeof web3 !== 'underfined') {
             App.web3Provider = web3.currentProvider;
