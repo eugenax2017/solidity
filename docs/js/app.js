@@ -164,8 +164,8 @@ $(function() {
         App.init();
     }
 
-    $(window).on("load", function() {
+    /*$(window).on("load", function() {
         console.log("Enter in the app ");
         App.init();
-    });
+    });*/
 });
